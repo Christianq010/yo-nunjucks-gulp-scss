@@ -12,32 +12,109 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+	
     <link rel="stylesheet" href="css/main.css">
-    <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    
+    <!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 </head>
 <body>
 <!--[if lt IE 9]>
 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="//browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 <div id="wrap"><!-- start #wrap -->
-    
-    {% include 'header.html' %} <!-- Header template -->
-
-
-
-
+    {% block header %}
+    <header id="header">
+        <nav class="fh5co-nav" role="navigation">
+            <div class="top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 text-right">
+                            <p class="site">www.yourdomainname.com</p>
+                            <p class="num">Call: +01 123 456 7890</p>
+                            <ul class="fh5co-social">
+                                <li><a href="#"><i class="icon-facebook2"></i></a></li>
+                                <li><a href="#"><i class="icon-twitter2"></i></a></li>
+                                <li><a href="#"><i class="icon-dribbble2"></i></a></li>
+                                <li><a href="#"><i class="icon-github"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <div id="fh5co-logo"><a href="index.html"><i class="icon-study"></i>LZN Media<span>.</span></a></div>
+                        </div>
+                        <div class="col-xs-10 text-right menu-1">
+                            <ul>
+                                <li class="active"><a href="index.html">Home</a></li>
+                                <li><a href="courses.html">Courses</a></li>
+                                <li><a href="teacher.html">Teacher</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="pricing.html">Pricing</a></li>
+                                <li class="has-dropdown">
+                                    <a href="blog.html">Blog</a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Web Design</a></li>
+                                        <li><a href="#">eCommerce</a></li>
+                                        <li><a href="#">Branding</a></li>
+                                        <li><a href="#">API</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li class="btn-cta"><a href="#"><span>Login</span></a></li>
+                                <li class="btn-cta"><a href="#"><span>Create a Course</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+    {% endblock %}
 
     {% block content %}{% endblock %}
 </div><!-- end #wrap -->
 
 
-    {% include 'footer.html' %} <!-- footer template -->
+{% include 'footer.html' %} <!-- footer template -->
 
 <!-- inject:js -->
 <!-- endinject -->
+<!-- jQuery -->
+<script src="js/vendor/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js/vendor/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js/vendor/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/vendor/jquery.waypoints.min.js"></script>
+<!-- Stellar Parallax -->
+<script src="js/vendor/jquery.stellar.min.js"></script>
+<!-- Carousel -->
+<script src="js/vendor/owl.carousel.min.js"></script>
+<!-- Flexslider -->
+<script src="js/vendor/jquery.flexslider-min.js"></script>
+<!-- countTo -->
+<script src="js/vendor/jquery.countTo.js"></script>
+<!-- Magnific Popup -->
+<script src="js/vendor/jquery.magnific-popup.min.js"></script>
+<script src="js/vendor/magnific-popup-options.js"></script>
+<!-- Count Down -->
+<script src="js/vendor/simplyCountdown.js"></script>
+<!-- Main .js -->
 <script src="js/main.js"></script>
 </body>
 </html>

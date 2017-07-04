@@ -227,7 +227,7 @@
             animation: "slide",
 
             easing: "swing",
-            direction: "vertical",
+            direction: "horizontal",
 
             slideshowSpeed: 5000,
             directionNav: true,

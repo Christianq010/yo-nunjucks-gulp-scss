@@ -124,3 +124,6 @@ In "templates" folder we have html parts and templates that need to be include o
 We can use to store some files Data, like Json, and others
 6. Dev(serve) Task:
 Starts local server, show sourcemaps for scss and js files, not optimizing images.
+
+### Resources
+* Template Used - https://freehtml5.co/demos/education/index.html

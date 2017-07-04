@@ -1,0 +1,115 @@
+{% extends "base.html" %} <!--Our page template-->
+{% set title = "Contact" %} <!--Set our page title-->
+
+
+<div id="page">
+
+{% block content %} <!--Start Put page data-->
+
+<aside id="fh5co-hero">
+		<div class="flexslider">
+			<ul class="slides">
+		   	<li style="background-image: url(img/q.jpg);">
+		   		<div class="overlay-gradient"></div>
+		   		<div class="container">
+		   			<div class="row">
+			   			<div class="col-md-8 col-md-offset-2 text-center slider-text">
+			   				<div class="slider-text-inner">
+			   					<h1 class="heading-section">Contact us</h1>
+									<h2>Get in touch if you have any further inquiries</h2>
+			   				</div>
+			   			</div>
+			   		</div>
+		   		</div>
+		   	</li>
+		  	</ul>
+	  	</div>
+	</aside>
+
+	<div id="fh5co-contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 col-md-push-1 animate-box">
+					
+					<div class="fh5co-contact-info">
+						<h3>Contact Information</h3>
+						<ul>
+							<li class="address">5B, Perera Avenue <br> Kohuwala, Sri Lanka</li>
+							<li class="phone"><a href="tel://1234567920">+ 94 77 253 3438</a></li>
+							<li class="email"><a href="">medialzn@gmail.com</a></li>
+							<li class="url"><a href="https://lznmedia.com">lznmedia.com</a></li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="col-md-6 animate-box">
+					<h3>Get In Touch</h3>
+					<form action="#">
+						<div class="row form-group">
+							<div class="col-md-6">
+								<!-- <label for="fname">First Name</label> -->
+								<input type="text" id="fname" class="form-control" placeholder="Your firstname">
+							</div>
+							<div class="col-md-6">
+								<!-- <label for="lname">Last Name</label> -->
+								<input type="text" id="lname" class="form-control" placeholder="Your lastname">
+							</div>
+						</div>
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="email">Email</label> -->
+								<input type="text" id="email" class="form-control" placeholder="Your email address">
+							</div>
+						</div>
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="subject">Subject</label> -->
+								<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
+							</div>
+						</div>
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="message">Message</label> -->
+								<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<input type="submit" value="Send Message" class="btn btn-primary">
+						</div>
+
+					</form>		
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div id="map" class="fh5co-map"></div>
+
+	<div id="fh5co-register" style="background-image: url(img/02.jpg);">
+		<div class="overlay"></div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 animate-box">
+				<div class="date-counter text-center">
+					<h2>Become a customer to use our Data Analytics portal</h2>
+					<h3>By LZN Media</h3>
+					<div class="simply-countdown simply-countdown-one"></div>
+					<p><strong>Contact us for further support</strong></p>
+					<p><a href="#" class="btn btn-primary btn-lg btn-reg">Register Now!</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+</div>
+
+{% endblock %} <!--end Put page data block-->
+
+<!-- Google Maps Import -->
+{% block extraScript %}
+	{% include 'parts/google-maps-import.html' %}
+{% endblock %} <!-- end Put page data block-->

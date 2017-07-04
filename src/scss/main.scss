@@ -238,7 +238,7 @@ figure {
         font-family: $font-primary;
         a {
             color: $brand-black;
-            position: absolute;
+            position: relative;
             padding-left: 25px;
             span {
                 color: $brand-black;
@@ -586,6 +586,19 @@ figure {
         content: '';
         background: rgba($brand-black, .5);
     }
+    h2 {
+        text-align: center;
+        color: $brand-selection-color;
+        font-size: 30px;
+        margin: 1em 0 1em 0;
+        font-family: $font-secondary;
+        font-weight: 100;
+    }
+    p {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 200;
+    }
     .counter-wrap {
         border: 1px solid red !important;
     }
@@ -610,6 +623,12 @@ figure {
             font-size: 45px;
             color: $brand-white;
         }
+    }
+    .unit {
+        font-size: 40px;
+        display: block;
+        color: rgba($brand-white, 1);
+        font-family: $font-secondary;
     }
 }
 

@@ -1,4 +1,7 @@
 # LZN Media
+
+* Hostied via firebase at - https://lzn-media-spa.firebaseapp.com/
+
 ## (Nunjucks template engine - used for templates)
 ### Must have on your computer:
 1. [Git](https://git-scm.com/download) (Guaranteed to work on: 2.12.0 Windows)

@@ -370,7 +370,7 @@ figure {
 #fh5co-hero {
     min-height: 630px;
     height: 630px;
-    background: $brand-white url(../images/loader.gif) no-repeat center center;
+    background: $brand-white url(../img/loader.gif) no-repeat center center;
     .btn {
         font-size: 24px;
         &.btn-primary {
@@ -1712,7 +1712,7 @@ figure {
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background: url(../images/loader.gif) center no-repeat #fff;
+    background: url(../img/loader.gif) center no-repeat #fff;
 }
 
 .row-padded-mb {

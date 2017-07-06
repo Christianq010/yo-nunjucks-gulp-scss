@@ -1,6 +1,6 @@
 # LZN Media
 
-* Hostied via firebase at - https://lzn-media-spa.firebaseapp.com/
+* Hosted via firebase at - https://www.lznmedia.com
 
 ## (Nunjucks template engine - used for templates)
 ### Must have on your computer:
